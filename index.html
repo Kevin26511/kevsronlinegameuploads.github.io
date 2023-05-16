@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Kevin's online games list!</title>
+  <style>
+    body {
+      background-color: #f1f1f1;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      color: #ff6600;
+      text-align: center;
+      margin-top: 50px;
+    }
+    
+    .game-list {
+      margin: 30px auto;
+      width: 400px;
+    }
+    
+    .game-list-title {
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .game-item {
+      background-color: #ffcc00;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    
+    .game-item a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .game-item a:hover {
+      color: #ff6600;
+    }
+  </style>
+<script src="https://cdn.jsdelivr.net/npm/confetti.js"></script>
+   <script>
+     document.addEventListener('DOMContentLoaded', function() {
+       var confettiSettings = { target: 'confetti-canvas', max: 80 };
+       var confetti = new ConfettiGenerator(confettiSettings);
+       confetti.render();
+     });
+   </script>
+</head>
+<body>
+  <marquee behavior="slide" direction=""><h1>Welcome to Kevin's online games list!</h1></marquee>
+  
+  <div class="game-list">
+    <h2 class="game-list-title">Kevin's Games</h2>
+    <ul>
+      <li class="game-item"><a href="https://kevin26511.github.io/door%20thing/www/index.html">Get2School (Unfinished school project)</a></li>
+      <li class="game-item"><a href="">Coming soon (Hopefully)</a></li>
+    </ul>
+  </div>
+  
+  <div class="game-list">
+    <h2 class="game-list-title">Kevin's Favorite Games</h2>
+    <ul>
+      <li class="game-item"><a href="https://www.example-game3.com">Game 3</a></li>
+      <li class="game-item"><a href="https://www.example-game4.com">Game 4</a></li>
+    </ul>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+</body>
+</html>
+
